@@ -11,9 +11,11 @@
 			<div>
 				{#if $user}
 					<a href="/messages" class="btn btn-primary mr-2">Messages</a>
+					<a href="/profile" class="btn btn-primary mr-2">Profile</a>
+					<!-- Profile link added -->
 					<button on:click={logout} class="btn btn-secondary">Logout</button>
 				{:else}
-					<a href="/login" class="btn btn-primary">Login</a>
+					<a href="/login" class="btn btn-primary mr-2">Login</a>
 					<a href="/register" class="btn btn-secondary">Register</a>
 				{/if}
 			</div>
